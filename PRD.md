@@ -10,16 +10,10 @@
 **Galop Trainer** is a fun, mobile-friendly quiz app that helps Polina (age 11) prepare for her French horse riding certification exams (Galop 1–4). The app turns dry exam material into an engaging, encouraging game — think "championne du monde" energy, not boring flashcards.
 
 ### Why this matters
-- Polina already uses the physical book but finds it frustrating: she writes answers in, can't erase them cleanly, and can't re-take quizzes
+- Polina already uses the physical book a lot and re-take quizzes multiple times
 - She wants to practice **repeatedly** — the book is a one-shot format
 - No good free app exists for this specific French certification
 - Future potential: other kids at her riding school, then broader market
-
-### Success criteria (v1)
-- Polina voluntarily opens the app to practice (the real test)
-- Covers Galop 1 fully across all 5 chapters (~55 questions)
-- Works on her iPhone/iPad in Safari
-- Dad can add new questions by dropping JSON files in a folder
 
 ---
 
@@ -27,8 +21,6 @@
 
 | Attribute | Detail |
 |---|---|
-| Name | Polina |
-| Age | 11 (born July 2015) |
 | Language | French (app UI and content entirely in French) |
 | Devices | iPhone (primary), iPad, desktop browser |
 | Context | Preparing for Galop exams at her riding school |
