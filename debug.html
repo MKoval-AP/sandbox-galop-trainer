@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galop Trainer — Debug / Requirements</title>
+  <style>
+    :root {
+      --bg: #1a1a2e;
+      --card: #16213e;
+      --accent: #e94560;
+      --text: #eee;
+      --text-dim: #999;
+      --border: #2a2a4a;
+      --code-bg: #0f0f23;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: var(--accent);
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 14px;
+      margin-bottom: 32px;
+    }
+
+    /* Navigation tabs */
+    .tabs {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      background: var(--bg);
+      padding: 8px 0;
+      z-index: 10;
+    }
+
+    .tab-btn {
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--text-dim);
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-family: var(--font);
+      font-size: 13px;
+      transition: all 150ms;
+    }
+
+    .tab-btn:hover { border-color: var(--accent); color: var(--text); }
+    .tab-btn.active { background: var(--accent); color: white; border-color: var(--accent); }
+
+    /* Sections */
+    .section { display: none; }
+    .section.active { display: block; }
+
+    h2 {
+      color: var(--accent);
+      font-size: 20px;
+      margin: 24px 0 12px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      color: var(--text);
+      font-size: 16px;
+      margin: 16px 0 8px;
+    }
+
+    /* PRD content */
+    .prd-content {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px;
+      white-space: pre-wrap;
+      font-size: 13px;
+      line-height: 1.7;
+      overflow-x: auto;
+    }
+
+    /* Question cards */
+    .question-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 12px;
+    }
+
+    .question-card .q-header {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .q-id {
+      font-size: 11px;
+      background: var(--accent);
+      color: white;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .q-type {
+      font-size: 11px;
+      background: var(--border);
+      color: var(--text-dim);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    .q-difficulty {
+      font-size: 11px;
+      color: var(--text-dim);
+    }
+
+    .q-text {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .q-options {
+      list-style: none;
+      padding: 0;
+    }
+
+    .q-options li {
+      padding: 4px 0;
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    .q-options li.correct-option {
+      color: #2ecc71;
+      font-weight: 600;
+    }
+
+    .q-options li .option-idx {
+      display: inline-block;
+      width: 20px;
+      color: var(--text-dim);
+    }
+
+    .q-explanation {
+      margin-top: 10px;
+      padding: 10px 12px;
+      background: var(--code-bg);
+      border-radius: 6px;
+      font-size: 12px;
+      color: var(--text-dim);
+      border-left: 3px solid var(--accent);
+    }
+
+    .q-items-order {
+      list-style: decimal;
+      padding-left: 24px;
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    .q-items-order li { padding: 2px 0; }
+    .q-items-order li span { color: #2ecc71; }
+
+    /* Chapter summary */
+    .chapter-summary {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    .chapter-stat {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 8px 16px;
+      font-size: 13px;
+    }
+
+    .chapter-stat strong { color: var(--accent); }
+
+    /* Image gallery */
+    .image-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 16px;
+    }
+
+    .image-item {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .image-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .image-item .image-name {
+      padding: 8px 12px;
+      font-size: 12px;
+      color: var(--text-dim);
+      border-top: 1px solid var(--border);
+    }
+
+    .no-images {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 40px;
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 14px;
+    }
+
+    /* App link */
+    .app-link {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      padding: 10px 24px;
+      border-radius: 6px;
+      font-weight: 600;
+      margin: 16px 0;
+    }
+
+    .app-link:hover { opacity: 0.9; }
+
+    /* JSON view */
+    .json-block {
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+      font-size: 12px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      color: var(--text-dim);
+      max-height: 400px;
+      overflow-y: auto;
+    }
+
+    .loading {
+      text-align: center;
+      padding: 40px;
+      color: var(--text-dim);
+    }
+
+    /* Collapsible */
+    details {
+      margin-bottom: 8px;
+    }
+
+    details summary {
+      cursor: pointer;
+      padding: 8px 0;
+      color: var(--text);
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    details summary:hover { color: var(--accent); }
+
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.92);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+      cursor: zoom-out;
+    }
+
+    .lightbox.open {
+      display: flex;
+    }
+
+    .lightbox img {
+      max-width: 95vw;
+      max-height: 95vh;
+      object-fit: contain;
+      border-radius: 4px;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 16px;
+      right: 24px;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 36px;
+      cursor: pointer;
+      z-index: 1001;
+      line-height: 1;
+    }
+
+    .lightbox-close:hover { color: var(--accent); }
+
+    .image-item {
+      cursor: zoom-in;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🐴 Galop Trainer — Debug & Requirements</h1>
+  <p class="subtitle">Testing & reference page. Exposes PRD, quiz data, and source book images.</p>
+  <a href="index.html" class="app-link">→ Open the App</a>
+
+  <div class="tabs" id="tabs">
+    <button class="tab-btn active" data-tab="prd">PRD</button>
+    <button class="tab-btn" data-tab="questions">Questions & Answers</button>
+    <button class="tab-btn" data-tab="images">Source Images</button>
+    <button class="tab-btn" data-tab="json-raw">Raw JSON</button>
+  </div>
+
+  <!-- PRD Section -->
+  <div class="section active" id="section-prd">
+    <h2>Product Requirements Document</h2>
+    <div class="prd-content loading" id="prd-content">Loading PRD...</div>
+  </div>
+
+  <!-- Questions Section -->
+  <div class="section" id="section-questions">
+    <h2>All Questions — with correct answers marked</h2>
+    <div id="questions-container" class="loading">Loading questions...</div>
+  </div>
+
+  <!-- Images Section -->
+  <div class="section" id="section-images">
+    <h2>Source Images (from /input/ folder)</h2>
+    <p style="color: var(--text-dim); margin-bottom: 16px; font-size: 13px;">
+      Book page photos from <code>/input/</code>. Click any image to open full size.
+    </p>
+    <div id="images-container" class="loading">Loading images...</div>
+  </div>
+
+  <!-- Raw JSON Section -->
+  <div class="section" id="section-json-raw">
+    <h2>Raw JSON Data</h2>
+    <div id="json-container" class="loading">Loading...</div>
+  </div>
+
+  <!-- Lightbox overlay -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="Full size">
+  </div>
+
+  <script>
+    (function () {
+      'use strict';
+
+      // Tab switching
+      var tabs = document.querySelectorAll('.tab-btn');
+      tabs.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          tabs.forEach(function (t) { t.classList.remove('active'); });
+          btn.classList.add('active');
+          document.querySelectorAll('.section').forEach(function (s) { s.classList.remove('active'); });
+          document.getElementById('section-' + btn.dataset.tab).classList.add('active');
+        });
+      });
+
+      // Load PRD
+      fetch('PRD.md')
+        .then(function (r) { return r.text(); })
+        .then(function (text) {
+          document.getElementById('prd-content').textContent = text;
+          document.getElementById('prd-content').classList.remove('loading');
+        })
+        .catch(function () {
+          document.getElementById('prd-content').textContent = 'Error: could not load PRD.md';
+        });
+
+      // Load CLAUDE.md too — append after PRD
+      fetch('CLAUDE.md')
+        .then(function (r) { return r.text(); })
+        .then(function (text) {
+          var el = document.getElementById('prd-content');
+          el.textContent += '\n\n' + '='.repeat(80) + '\n\n# CLAUDE.md (Technical Spec)\n\n' + text;
+        });
+
+      // Load questions
+      var BASE = 'data/questions/';
+
+      fetch(BASE + 'index.json')
+        .then(function (r) { return r.json(); })
+        .then(function (manifest) {
+          var activeGalop = manifest.galops.find(function (g) { return g.status === 'active'; });
+          if (!activeGalop) return;
+
+          var promises = activeGalop.files.map(function (f) {
+            return fetch(BASE + f).then(function (r) { return r.json(); });
+          });
+
+          return Promise.all(promises);
+        })
+        .then(function (chapters) {
+          renderQuestions(chapters);
+          renderRawJSON(chapters);
+        });
+
+      function renderQuestions(chapters) {
+        var container = document.getElementById('questions-container');
+        container.innerHTML = '';
+        container.classList.remove('loading');
+
+        var totalQuestions = 0;
+        var typeCounts = {};
+
+        chapters.forEach(function (ch) {
+          var section = document.createElement('div');
+
+          var title = document.createElement('h2');
+          title.textContent = ch.emoji + ' Chapitre ' + ch.chapter + ' — ' + ch.title;
+          section.appendChild(title);
+
+          // Stats
+          var summary = document.createElement('div');
+          summary.className = 'chapter-summary';
+
+          var types = {};
+          ch.questions.forEach(function (q) {
+            types[q.type] = (types[q.type] || 0) + 1;
+            typeCounts[q.type] = (typeCounts[q.type] || 0) + 1;
+          });
+          totalQuestions += ch.questions.length;
+
+          var countStat = document.createElement('div');
+          countStat.className = 'chapter-stat';
+          countStat.innerHTML = '<strong>' + ch.questions.length + '</strong> questions total';
+          summary.appendChild(countStat);
+
+          Object.keys(types).forEach(function (t) {
+            var s = document.createElement('div');
+            s.className = 'chapter-stat';
+            s.innerHTML = '<strong>' + types[t] + '</strong> ' + t;
+            summary.appendChild(s);
+          });
+
+          section.appendChild(summary);
+
+          // Questions
+          ch.questions.forEach(function (q) {
+            section.appendChild(renderQuestionCard(q));
+          });
+
+          container.appendChild(section);
+        });
+
+        // Global summary at top
+        var globalSummary = document.createElement('div');
+        globalSummary.className = 'chapter-summary';
+        globalSummary.style.marginBottom = '24px';
+
+        var totalStat = document.createElement('div');
+        totalStat.className = 'chapter-stat';
+        totalStat.innerHTML = '<strong>' + totalQuestions + '</strong> questions total';
+        globalSummary.appendChild(totalStat);
+
+        Object.keys(typeCounts).forEach(function (t) {
+          var s = document.createElement('div');
+          s.className = 'chapter-stat';
+          s.innerHTML = '<strong>' + typeCounts[t] + '</strong> ' + t;
+          globalSummary.appendChild(s);
+        });
+
+        container.insertBefore(globalSummary, container.firstChild);
+      }
+
+      function renderQuestionCard(q) {
+        var card = document.createElement('div');
+        card.className = 'question-card';
+
+        // Header
+        var header = document.createElement('div');
+        header.className = 'q-header';
+
+        var idBadge = document.createElement('span');
+        idBadge.className = 'q-id';
+        idBadge.textContent = q.id;
+        header.appendChild(idBadge);
+
+        var typeBadge = document.createElement('span');
+        typeBadge.className = 'q-type';
+        typeBadge.textContent = q.type;
+        header.appendChild(typeBadge);
+
+        var diff = document.createElement('span');
+        diff.className = 'q-difficulty';
+        diff.textContent = 'diff: ' + q.difficulty;
+        header.appendChild(diff);
+
+        if (q.needs_image) {
+          var imgBadge = document.createElement('span');
+          imgBadge.className = 'q-type';
+          imgBadge.style.background = '#e74c3c';
+          imgBadge.style.color = 'white';
+          imgBadge.textContent = 'needs_image';
+          header.appendChild(imgBadge);
+        }
+
+        card.appendChild(header);
+
+        // Question text
+        var text = document.createElement('p');
+        text.className = 'q-text';
+        text.textContent = q.question;
+        card.appendChild(text);
+
+        // Options / items
+        if (q.type === 'mcq' || q.type === 'multi_select' || q.type === 'img_id') {
+          var list = document.createElement('ul');
+          list.className = 'q-options';
+
+          var correctSet = Array.isArray(q.correct) ? q.correct : [q.correct];
+
+          q.options.forEach(function (opt, idx) {
+            var li = document.createElement('li');
+            if (correctSet.indexOf(idx) !== -1) {
+              li.className = 'correct-option';
+            }
+            var idxSpan = document.createElement('span');
+            idxSpan.className = 'option-idx';
+            idxSpan.textContent = String.fromCharCode(65 + idx) + '.';
+            li.appendChild(idxSpan);
+            li.appendChild(document.createTextNode(' ' + opt + (correctSet.indexOf(idx) !== -1 ? ' ✓' : '')));
+            list.appendChild(li);
+          });
+
+          card.appendChild(list);
+        } else if (q.type === 'ordering') {
+          var oList = document.createElement('ol');
+          oList.className = 'q-items-order';
+
+          q.items_in_order.forEach(function (item, idx) {
+            var li = document.createElement('li');
+            li.innerHTML = '<span>' + escapeHtml(item) + '</span>';
+            oList.appendChild(li);
+          });
+
+          card.appendChild(oList);
+        }
+
+        // Explanation
+        if (q.explanation) {
+          var expl = document.createElement('div');
+          expl.className = 'q-explanation';
+          expl.textContent = q.explanation;
+          card.appendChild(expl);
+        }
+
+        return card;
+      }
+
+      function renderRawJSON(chapters) {
+        var container = document.getElementById('json-container');
+        container.innerHTML = '';
+        container.classList.remove('loading');
+
+        chapters.forEach(function (ch) {
+          var details = document.createElement('details');
+
+          var summary = document.createElement('summary');
+          summary.textContent = ch.emoji + ' Chapitre ' + ch.chapter + ' — ' + ch.title + ' (' + ch.questions.length + ' questions)';
+          details.appendChild(summary);
+
+          var block = document.createElement('pre');
+          block.className = 'json-block';
+          block.textContent = JSON.stringify(ch, null, 2);
+          details.appendChild(block);
+
+          container.appendChild(details);
+        });
+      }
+
+      // Load images from /input/
+      loadInputImages();
+
+      function loadInputImages() {
+        var container = document.getElementById('images-container');
+
+        // Try to load an index file first, fallback to common names
+        fetch('input/index.json')
+          .then(function (r) {
+            if (!r.ok) throw new Error('No index');
+            return r.json();
+          })
+          .then(function (files) {
+            renderImages(files);
+          })
+          .catch(function () {
+            // No index.json — try to discover images by probing common patterns
+            discoverImages();
+          });
+      }
+
+      function discoverImages() {
+        var container = document.getElementById('images-container');
+        var extensions = ['jpg', 'jpeg', 'png', 'webp', 'gif'];
+        var prefixes = [
+          // Try chapter-based names
+          'ch1', 'ch2', 'ch3', 'ch4', 'ch5',
+          'galop1-ch1', 'galop1-ch2', 'galop1-ch3', 'galop1-ch4', 'galop1-ch5',
+          // Try page-based names
+          'page', 'p', 'img', 'photo', 'scan',
+          // Try numbered
+          '1', '2', '3', '4', '5', '6', '7', '8', '9', '10',
+          '01', '02', '03', '04', '05', '06', '07', '08', '09', '10',
+          '11', '12', '13', '14', '15', '16', '17', '18', '19', '20'
+        ];
+
+        var candidates = [];
+        prefixes.forEach(function (p) {
+          extensions.forEach(function (ext) {
+            candidates.push(p + '.' + ext);
+          });
+        });
+
+        // Also try with underscores/dashes
+        for (var i = 1; i <= 5; i++) {
+          for (var j = 1; j <= 20; j++) {
+            extensions.forEach(function (ext) {
+              candidates.push('ch' + i + '-' + j + '.' + ext);
+              candidates.push('ch' + i + '_' + j + '.' + ext);
+            });
+          }
+        }
+
+        var found = [];
+        var checked = 0;
+        var total = candidates.length;
+
+        if (total === 0) {
+          showNoImages();
+          return;
+        }
+
+        candidates.forEach(function (filename) {
+          var img = new Image();
+          img.onload = function () {
+            found.push(filename);
+            checked++;
+            if (checked === total) renderImages(found.sort());
+          };
+          img.onerror = function () {
+            checked++;
+            if (checked === total) {
+              if (found.length === 0) showNoImages();
+              else renderImages(found.sort());
+            }
+          };
+          img.src = 'input/' + filename;
+        });
+      }
+
+      // Lightbox
+      var lightbox = document.getElementById('lightbox');
+      var lightboxImg = document.getElementById('lightbox-img');
+
+      function openLightbox(src) {
+        lightboxImg.src = src;
+        lightbox.classList.add('open');
+      }
+
+      function closeLightbox() {
+        lightbox.classList.remove('open');
+        lightboxImg.src = '';
+      }
+
+      document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', function (e) {
+        if (e.target === lightbox) closeLightbox();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeLightbox();
+      });
+
+      function renderImages(files) {
+        var container = document.getElementById('images-container');
+        container.classList.remove('loading');
+
+        if (!files || files.length === 0) {
+          showNoImages();
+          return;
+        }
+
+        container.innerHTML = '';
+        var gallery = document.createElement('div');
+        gallery.className = 'image-gallery';
+
+        files.forEach(function (filename) {
+          var item = document.createElement('div');
+          item.className = 'image-item';
+
+          var img = document.createElement('img');
+          var fullSrc = 'input/' + filename;
+          img.src = fullSrc;
+          img.alt = filename;
+          img.loading = 'lazy';
+
+          item.addEventListener('click', function () {
+            openLightbox(fullSrc);
+          });
+
+          var name = document.createElement('div');
+          name.className = 'image-name';
+          name.textContent = filename;
+
+          item.appendChild(img);
+          item.appendChild(name);
+          gallery.appendChild(item);
+        });
+
+        container.appendChild(gallery);
+      }
+
+      function showNoImages() {
+        var container = document.getElementById('images-container');
+        container.classList.remove('loading');
+        container.innerHTML = '<div class="no-images">' +
+          '<p>No images found in <code>/input/</code></p>' +
+          '<p style="margin-top:12px">To add images:</p>' +
+          '<p>1. Place image files in the <code>input/</code> folder</p>' +
+          '<p>2. Create <code>input/index.json</code> listing the filenames:</p>' +
+          '<pre style="text-align:left;display:inline-block;margin-top:8px;padding:12px;background:var(--code-bg);border-radius:6px">["page1.jpg", "page2.jpg", "ch3-licol.png"]</pre>' +
+          '</div>';
+      }
+
+      function escapeHtml(text) {
+        var div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+      }
+    })();
+  </script>
+</body>
+</html>

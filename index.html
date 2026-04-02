@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#FFF8F0">
+  <title>Galop Trainer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+</head>
+<body>
+  <div id="app">
+    <!-- Home Screen -->
+    <div id="screen-home" class="screen active">
+      <header class="home-header">
+        <h1>Galop Trainer 🐴</h1>
+      </header>
+
+      <div class="stats-bar" id="stats-bar">
+        <div class="stat">
+          <span class="stat-value" id="stat-answered">0</span>
+          <span class="stat-label">Réponses</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="stat-percent">0%</span>
+          <span class="stat-label">Correct</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="stat-streak">0</span>
+          <span class="stat-label">Série</span>
+        </div>
+      </div>
+
+      <div class="galop-levels" id="galop-levels"></div>
+    </div>
+
+    <!-- Chapter Selection Screen -->
+    <div id="screen-chapters" class="screen">
+      <header class="screen-header">
+        <button class="btn-back" id="btn-back-chapters" aria-label="Retour">← Retour</button>
+        <h2 id="chapters-title">Galop 1</h2>
+      </header>
+      <div class="chapter-list" id="chapter-list"></div>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="screen-quiz" class="screen">
+      <header class="quiz-header">
+        <button class="btn-back" id="btn-back-quiz" aria-label="Retour">← Quitter</button>
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="quiz-progress-bar"></div>
+        </div>
+        <span class="progress-text" id="quiz-progress-text">1/10</span>
+      </header>
+      <div class="quiz-body" id="quiz-body"></div>
+    </div>
+
+    <!-- Results Screen -->
+    <div id="screen-results" class="screen">
+      <div class="results-content" id="results-content"></div>
+    </div>
+  </div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
