@@ -1,0 +1,118 @@
+{
+  "galop": 1,
+  "chapter": 4,
+  "title": "Pratique Équestre à Pied",
+  "emoji": "🚶",
+  "questions": [
+    {
+      "id": "g1-ch4-001",
+      "type": "multi_select",
+      "question": "Vrai ou faux ? Coche toutes les affirmations correctes :",
+      "options": [
+        "Il ne faut passer sous l'encolure que si le cheval y est habitué.",
+        "Avec un cheval, il faut toujours agir calmement dans la voix et dans les gestes.",
+        "Le cheval n'a pas un odorat très développé.",
+        "Si mon cheval se blesse, je dois immédiatement avertir le vétérinaire du club.",
+        "L'étrille se passe sur toutes les parties du corps du cheval.",
+        "Le bouchon se passe après l'étrille.",
+        "Le pansage s'effectue également après la séance.",
+        "Le cheval qui tire au renard se jette en arrière quand il voit un renard.",
+        "Au pas, à côté de moi, je laisse le cheval me dépasser.",
+        "Je peux utiliser ma voix et choisir un code pour renforcer mon action.",
+        "L'énergie du cavalier ne sert pas pour faire avancer un cheval.",
+        "Quand le cheval s'agite, je m'impose en criant et en tirant sur la longe."
+      ],
+      "correct": [0, 1, 5, 6, 8, 9],
+      "explanation": "Passer sous l'encolure seulement si le cheval est habitué (A). Agir calmement (B). Le bouchon passe après l'étrille (F). Le pansage se fait aussi après la séance (G). Au pas, le cheval peut me dépasser légèrement (I). La voix renforce les actions (J). L'étrille ne passe PAS partout (E). On ne crie pas sur un cheval agité (L). Le cheval a un TRÈS bon odorat (C).",
+      "difficulty": 2
+    },
+    {
+      "id": "g1-ch4-002",
+      "type": "mcq",
+      "question": "Lorsque je marche mon cheval :",
+      "options": [
+        "Je le regarde pour voir son comportement.",
+        "Je regarde par terre pour ne pas me faire marcher dessus.",
+        "Je regarde devant moi et je sais où je vais."
+      ],
+      "correct": 2,
+      "explanation": "En marchant avec son cheval, il faut regarder devant soi et savoir où l'on va. Le cheval suit le regard et l'énergie du cavalier.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch4-003",
+      "type": "mcq",
+      "question": "Mon cheval me colle et parfois me pousse quand je marche à côté de lui :",
+      "options": [
+        "C'est peut-être un jeu, je le laisse faire pour ne pas le contrarier.",
+        "Je l'éloigne jusqu'à ce qu'il respecte mon espace.",
+        "C'est sa façon de montrer qu'il m'aime bien, je fais pareil."
+      ],
+      "correct": 1,
+      "explanation": "Si le cheval envahit ton espace, il faut le repousser calmement mais fermement. C'est une question de respect et de sécurité.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch4-004",
+      "type": "mcq",
+      "question": "Si je ralentis le pas et que je m'arrête, le cheval devrait :",
+      "options": [
+        "accélérer",
+        "s'arrêter",
+        "reculer"
+      ],
+      "correct": 1,
+      "explanation": "Le cheval doit s'adapter au rythme du cavalier. Si tu t'arrêtes, il doit s'arrêter aussi.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch4-005",
+      "type": "mcq",
+      "question": "La ligne imaginaire séparant le manège en deux est appelée :",
+      "options": [
+        "ligne du centre",
+        "ligne du milieu",
+        "ligne principale"
+      ],
+      "correct": 1,
+      "explanation": "La ligne du milieu est la ligne imaginaire qui sépare le manège en deux dans le sens de la longueur.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch4-006",
+      "type": "mcq",
+      "question": "Le cavalier est à main gauche quand :",
+      "options": [
+        "sa main extérieure est à gauche",
+        "sa main intérieure est à gauche"
+      ],
+      "correct": 1,
+      "explanation": "On est à main gauche quand la main intérieure (celle du côté du centre du manège) est la main gauche. Le cavalier tourne donc dans le sens inverse des aiguilles d'une montre.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch4-007",
+      "type": "mcq",
+      "question": "Si d'autres chevaux sont déjà dans le manège, avant d'entrer je dois :",
+      "options": [
+        "demander aux cavaliers de s'arrêter",
+        "demander l'autorisation d'entrer",
+        "entrer le plus discrètement possible"
+      ],
+      "correct": 1,
+      "explanation": "Par politesse et sécurité, il faut toujours demander l'autorisation avant d'entrer dans un manège occupé. On dit souvent « Piste ! » pour signaler son entrée.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch4-008",
+      "type": "img_id",
+      "question": "Sur quelle(s) photo(s), le cavalier tient-il le plus correctement son cheval ?",
+      "options": ["Photo A", "Photo B", "Photo C"],
+      "correct": [0, 2],
+      "needs_image": true,
+      "image_description": "Three photos of people leading horses. Photo A: person leading correctly, looking forward, horse at proper distance. Photo B: person looking at horse, not forward. Photo C: person leading correctly with proper posture.",
+      "explanation": "Le cavalier doit marcher à côté de l'épaule du cheval, regarder devant lui, et tenir la longe à bonne distance — ni trop courte ni trop longue.",
+      "difficulty": 1
+    }
+  ]
+}

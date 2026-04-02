@@ -1,0 +1,172 @@
+{
+  "galop": 1,
+  "chapter": 2,
+  "title": "Connaissance du Cheval",
+  "emoji": "🐴",
+  "questions": [
+    {
+      "id": "g1-ch2-001",
+      "type": "multi_select",
+      "question": "Vrai ou faux ? Coche toutes les affirmations correctes :",
+      "options": [
+        "Dans leur milieu naturel, les chevaux passent la majeure partie de leur temps à brouter.",
+        "Les chevaux n'expriment pas leurs émotions.",
+        "Les chevaux sont très paresseux.",
+        "Les poneys et les chevaux appartiennent à la même espèce.",
+        "Il y a 30 millions d'années, les équidés étaient de très petite taille.",
+        "Tout comme les vaches (bovins), le cheval est un ruminant.",
+        "La robe du cheval est définie par sa couleur générale.",
+        "Avant d'aborder un cheval, il faut capter son attention."
+      ],
+      "correct": [0, 3, 4, 6, 7],
+      "explanation": "Les chevaux broutent la plupart du temps, poneys et chevaux sont la même espèce, les ancêtres des équidés étaient petits, la robe = la couleur, et il faut toujours prévenir le cheval avant de l'approcher. Les chevaux expriment bien leurs émotions, ne sont pas paresseux, et ne sont pas des ruminants.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch2-002",
+      "type": "mcq",
+      "question": "Le cheval est domestiqué depuis environ :",
+      "options": [
+        "50 000 ans",
+        "5 000 ans",
+        "500 ans"
+      ],
+      "correct": 1,
+      "explanation": "Le cheval a été domestiqué il y a environ 5 000 ans, dans les steppes d'Asie centrale.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch2-003",
+      "type": "mcq",
+      "question": "Le cheval est :",
+      "options": [
+        "une proie",
+        "un prédateur"
+      ],
+      "correct": 0,
+      "explanation": "Le cheval est une proie dans la nature. C'est pour cela que son premier réflexe face au danger est la fuite.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch2-004",
+      "type": "mcq",
+      "question": "Quelle robe ne fait pas partie des robes de base ?",
+      "options": [
+        "gris",
+        "alezan",
+        "bai"
+      ],
+      "correct": 0,
+      "explanation": "Les robes de base sont : alezan, bai, noir, et isabelle. Le gris n'est pas une robe de base, c'est une robe composée.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch2-005",
+      "type": "mcq",
+      "question": "Le galop est une allure à :",
+      "options": [
+        "2 temps",
+        "3 temps",
+        "4 temps"
+      ],
+      "correct": 1,
+      "explanation": "Le galop est une allure à 3 temps, suivie d'un temps de suspension.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch2-006",
+      "type": "mcq",
+      "question": "Le cheval est un animal :",
+      "options": [
+        "omnivore : qui se nourrit d'aliments d'origine végétale ou animale",
+        "herbivore : qui se nourrit d'herbe et de végétaux",
+        "carnivore : qui se nourrit de viande"
+      ],
+      "correct": 1,
+      "explanation": "Le cheval est un herbivore. Il se nourrit essentiellement d'herbe, de foin et de céréales.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch2-007",
+      "type": "mcq",
+      "question": "Les chevaux aiment :",
+      "options": [
+        "vivre en box",
+        "vivre seuls",
+        "vivre avec leurs congénères"
+      ],
+      "correct": 2,
+      "explanation": "Le cheval est un animal grégaire (social). Il aime vivre en groupe avec d'autres chevaux.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch2-008",
+      "type": "mcq",
+      "question": "Le trot est une allure :",
+      "options": [
+        "sautée",
+        "basculée",
+        "marchée"
+      ],
+      "correct": 0,
+      "explanation": "Le trot est une allure sautée à 2 temps. Le cheval se projette d'un diagonal à l'autre avec un temps de suspension.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch2-009",
+      "type": "mcq",
+      "question": "Lorsque le cheval couche les oreilles en arrière et contracte les naseaux, il est :",
+      "options": [
+        "agacé",
+        "fatigué",
+        "intimidé"
+      ],
+      "correct": 0,
+      "explanation": "Quand un cheval couche les oreilles en arrière et contracte les naseaux, c'est un signe d'agacement ou de mécontentement. Attention !",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch2-010",
+      "type": "multi_select",
+      "question": "Les trois principales allures sont :",
+      "options": [
+        "le pas",
+        "l'amble",
+        "le trot",
+        "le triple galop",
+        "le galop"
+      ],
+      "correct": [0, 2, 4],
+      "explanation": "Les 3 allures principales du cheval sont : le pas (4 temps), le trot (2 temps) et le galop (3 temps). L'amble et le triple galop ne sont pas des allures principales.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch2-011",
+      "type": "mcq",
+      "question": "Le premier instinct du cheval face au danger est :",
+      "options": [
+        "la fuite",
+        "l'affrontement"
+      ],
+      "correct": 0,
+      "explanation": "Le cheval est une proie. Son premier réflexe face au danger est de fuir. C'est important de le savoir pour comprendre ses réactions !",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch2-012",
+      "type": "multi_select",
+      "question": "Les 3 grandes parties du corps du cheval sont :",
+      "options": [
+        "l'avant-main",
+        "les jambes",
+        "le corps",
+        "l'arrière-main",
+        "la crinière"
+      ],
+      "correct": [0, 2, 3],
+      "explanation": "Le corps du cheval se divise en 3 parties : l'avant-main (tête, encolure, membres antérieurs), le corps (dos, ventre) et l'arrière-main (croupe, queue, membres postérieurs).",
+      "difficulty": 1,
+      "_note": "Derived from Q12 labeling exercise. Original was a diagram labeling task with: 1-avant-main, 2-corps, 3-arrière-main, 4-tête, 5-encolure, 6-garrot, 7-poitrail, 8-dos, 9-croupe, 10-queue"
+    }
+  ]
+}

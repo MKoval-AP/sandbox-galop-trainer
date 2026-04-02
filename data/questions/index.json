@@ -1,0 +1,34 @@
+{
+  "galops": [
+    {
+      "level": 1,
+      "title": "Galop 1",
+      "status": "active",
+      "files": [
+        "galop1-ch1-connaissances.json",
+        "galop1-ch2-connaissance-cheval.json",
+        "galop1-ch3-soccuper-cheval.json",
+        "galop1-ch4-pratique-pied.json",
+        "galop1-ch5-pratique-cheval.json"
+      ]
+    },
+    {
+      "level": 2,
+      "title": "Galop 2",
+      "status": "placeholder",
+      "files": []
+    },
+    {
+      "level": 3,
+      "title": "Galop 3",
+      "status": "placeholder",
+      "files": []
+    },
+    {
+      "level": 4,
+      "title": "Galop 4",
+      "status": "placeholder",
+      "files": []
+    }
+  ]
+}

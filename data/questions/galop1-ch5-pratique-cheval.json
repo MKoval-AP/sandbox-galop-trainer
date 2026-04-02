@@ -1,0 +1,190 @@
+{
+  "galop": 1,
+  "chapter": 5,
+  "title": "Pratique Équestre à Cheval",
+  "emoji": "🏇",
+  "questions": [
+    {
+      "id": "g1-ch5-001",
+      "type": "multi_select",
+      "question": "Vrai ou faux ? Coche toutes les affirmations correctes :",
+      "options": [
+        "Je règle mes étriers uniquement lorsque je suis à cheval.",
+        "Je dois toujours ressangler avant de monter.",
+        "Je dois toujours m'arrêter pour rechausser mes étriers.",
+        "La tenue des rênes chacune dans une main donne moins de précision pour diriger le cheval.",
+        "Lorsque le cheval répond à mon action, je continue.",
+        "Il est possible de diriger le cheval uniquement avec l'assiette.",
+        "Toute action peut être précédée d'un code vocal.",
+        "La cravache s'utilise en même temps que l'action de jambe.",
+        "Pour m'arrêter, je me penche en arrière et je tire sur les rênes.",
+        "À cheval, le mouvement du bassin est constamment sollicité.",
+        "Pour monter en équilibre, il est préférable de raccourcir ses étriers d'un ou deux trous.",
+        "Le trot enlevé aide à trouver une meilleure stabilité.",
+        "Les deux lignes parallèles allant de l'épaule du cavalier à la bouche du cheval s'appellent le corridor des rênes."
+      ],
+      "correct": [1, 5, 6, 9, 10, 11],
+      "explanation": "Il faut ressangler avant de monter (B). On peut diriger avec l'assiette seule (F). Un code vocal peut précéder chaque action (G). Le bassin bouge en permanence (J). Étriers plus courts = meilleur équilibre (K). Le trot enlevé aide la stabilité (L). On ne tire PAS sur les rênes pour s'arrêter (I), et quand le cheval répond, on CESSE l'action (E).",
+      "difficulty": 2
+    },
+    {
+      "id": "g1-ch5-002",
+      "type": "multi_select",
+      "question": "Quelles sont les différentes façons de monter à cheval ?",
+      "options": [
+        "en se faisant donner la jambe",
+        "à partir d'un montoir",
+        "en s'appuyant sur l'étrier",
+        "en sautant à pieds joints par-dessus la croupe"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "On peut monter en se faisant donner la jambe (aide d'une autre personne), depuis un montoir (bloc ou marche), ou en s'appuyant sur l'étrier. On ne saute jamais par-dessus la croupe !",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch5-003",
+      "type": "mcq",
+      "question": "Enchaîner des transitions permet :",
+      "options": [
+        "d'avoir un cheval plus rapide",
+        "d'avoir un cheval plus attentif"
+      ],
+      "correct": 1,
+      "explanation": "Les transitions (changements d'allure) rendent le cheval plus attentif et réactif aux demandes du cavalier.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch5-004",
+      "type": "mcq",
+      "question": "Laquelle de ces deux allures est la plus confortable ?",
+      "options": [
+        "le trot",
+        "le galop"
+      ],
+      "correct": 1,
+      "explanation": "Le galop est généralement plus confortable que le trot car le mouvement est plus fluide et berçant.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch5-005",
+      "type": "multi_select",
+      "question": "Les aides naturelles sont :",
+      "options": [
+        "les jambes",
+        "les éperons",
+        "le poids du corps",
+        "la voix"
+      ],
+      "correct": [0, 2, 3],
+      "explanation": "Les aides naturelles sont : les jambes, le poids du corps (l'assiette) et la voix. Les éperons sont une aide ARTIFICIELLE.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch5-006",
+      "type": "multi_select",
+      "question": "Les aides artificielles sont :",
+      "options": [
+        "la cravache",
+        "la chambrière",
+        "les éperons",
+        "les mains"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "Les aides artificielles sont : la cravache, la chambrière et les éperons. Les mains font partie des aides naturelles.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch5-007",
+      "type": "multi_select",
+      "question": "L'action des jambes sert à :",
+      "options": [
+        "ralentir",
+        "passer à l'allure inférieure",
+        "passer à l'allure supérieure",
+        "accélérer"
+      ],
+      "correct": [2, 3],
+      "explanation": "Les jambes servent à passer à l'allure supérieure et à accélérer. Pour ralentir ou passer à l'allure inférieure, on utilise les mains (les rênes) et l'assiette.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch5-008",
+      "type": "mcq",
+      "question": "Pour partir au pas :",
+      "options": [
+        "je donne un coup de talon",
+        "je presse le ventre du cheval avec mes mollets",
+        "je lâche mes rênes"
+      ],
+      "correct": 1,
+      "explanation": "Pour demander le pas, on presse doucement le ventre du cheval avec les mollets. On ne donne pas de coup de talon (c'est brutal) et on ne lâche pas les rênes.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch5-009",
+      "type": "multi_select",
+      "question": "Pourquoi le terme « Galop » a-t-il été choisi pour désigner les diplômes fédéraux du cavalier ?",
+      "options": [
+        "C'est l'allure préférée des cavaliers.",
+        "C'est l'allure la plus rapide.",
+        "C'est le symbole de l'équitation.",
+        "Aucune de ces réponses n'est correcte."
+      ],
+      "correct": [0, 2],
+      "explanation": "Le terme « Galop » a été choisi car c'est l'allure préférée des cavaliers et le symbole même de l'équitation.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch5-010",
+      "type": "multi_select",
+      "question": "À quoi servent les mains à cheval ?",
+      "options": [
+        "À ralentir et s'arrêter.",
+        "À diriger le cheval.",
+        "À porter la tête du cheval."
+      ],
+      "correct": [0, 1],
+      "explanation": "Les mains (via les rênes) servent à ralentir, s'arrêter et diriger le cheval. Elles ne servent pas à porter sa tête.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch5-011",
+      "type": "img_id",
+      "question": "Sur quel dessin les étriers sont-ils chaussés correctement ?",
+      "options": ["Dessin A", "Dessin B", "Dessin C"],
+      "correct": 1,
+      "needs_image": true,
+      "image_description": "Three illustrations showing a rider's foot in a stirrup. Drawing A: foot too far through. Drawing B: ball of foot on stirrup, heel down — correct position. Drawing C: foot barely in stirrup.",
+      "explanation": "L'étrier doit être chaussé au niveau de la partie la plus large du pied (les orteils), avec le talon plus bas que la pointe du pied.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch5-012",
+      "type": "ordering",
+      "question": "Pour pouvoir tourner, mets les actions dans le bon ordre :",
+      "items_in_order": [
+        "J'ajuste mes rênes.",
+        "Je regarde dans la direction où je veux aller.",
+        "J'oriente mes épaules dans la direction souhaitée.",
+        "J'oriente mon couloir de rênes dans la direction souhaitée.",
+        "J'agis avec mes jambes pour maintenir le mouvement."
+      ],
+      "explanation": "Pour tourner : 1) Ajuster les rênes, 2) Regarder, 3) Orienter les épaules, 4) Orienter les rênes, 5) Agir avec les jambes. Le regard guide tout le reste !",
+      "difficulty": 2
+    },
+    {
+      "id": "g1-ch5-013",
+      "type": "ordering",
+      "question": "Pour descendre de cheval, mets les actions dans le bon ordre :",
+      "items_in_order": [
+        "Arrêter le cheval.",
+        "Déchausser les 2 étriers.",
+        "Incliner son buste en avant et prendre appui avec les mains au niveau du garrot.",
+        "Lancer sa jambe droite vers l'arrière et vers le haut par-dessus la croupe.",
+        "Mettre pied à terre."
+      ],
+      "explanation": "Pour descendre : 1) Arrêter, 2) Déchausser les étriers, 3) Se pencher en avant avec appui au garrot, 4) Passer la jambe par-dessus la croupe, 5) Poser les pieds au sol.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "galop": 1,
+  "chapter": 3,
+  "title": "S'occuper du Cheval",
+  "emoji": "🧹",
+  "questions": [
+    {
+      "id": "g1-ch3-001",
+      "type": "mcq",
+      "question": "Pour enlever le filet, je dois en premier :",
+      "options": [
+        "déboucler les rênes",
+        "déboucler le montant du filet",
+        "déboucler la sous-gorge"
+      ],
+      "correct": 2,
+      "explanation": "La première chose à faire pour enlever le filet est de déboucler la sous-gorge, qui maintient le filet en place sous la gorge du cheval.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch3-002",
+      "type": "multi_select",
+      "question": "S'occuper de son poney/cheval avant la séance permet de :",
+      "options": [
+        "faire connaissance avec lui",
+        "s'échauffer",
+        "se mettre en harmonie avec lui",
+        "instaurer une relation de confiance"
+      ],
+      "correct": [0, 1, 2, 3],
+      "explanation": "Toutes ces réponses sont correctes ! S'occuper de son cheval avant la séance crée un lien de confiance, permet de s'échauffer, de faire connaissance et de se mettre en harmonie.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch3-003",
+      "type": "multi_select",
+      "question": "Quand j'entre dans le boxe :",
+      "options": [
+        "je vais directement lui mettre le licol",
+        "je préviens le cheval",
+        "je capte son attention"
+      ],
+      "correct": [1, 2],
+      "explanation": "Avant d'entrer dans le boxe, il faut toujours prévenir le cheval et capter son attention. Ne jamais se précipiter directement sur lui avec le licol !",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch3-004",
+      "type": "mcq",
+      "question": "Donner du confort à son cheval, c'est :",
+      "options": [
+        "le gratouiller aux endroits qu'il aime",
+        "le punir s'il m'a marché sur le pied",
+        "le caresser quand il a les oreilles en arrière et l'air agacé"
+      ],
+      "correct": 0,
+      "explanation": "Donner du confort = gratouiller le cheval aux endroits qu'il aime. Quand il est agacé (oreilles en arrière), il vaut mieux le laisser tranquille.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch3-005",
+      "type": "ordering",
+      "question": "Pour enlever la selle, mets les étapes dans le bon ordre :",
+      "items_in_order": [
+        "Je remonte les étriers.",
+        "Je déboucle la sangle.",
+        "Je pose la sangle sur le siège.",
+        "Je prends et soulève la selle.",
+        "Je pose la selle sur le porte-selle."
+      ],
+      "explanation": "L'ordre correct : 1) Remonter les étriers, 2) Déboucler la sangle, 3) Poser la sangle sur le siège, 4) Prendre et soulever la selle, 5) La poser sur le porte-selle.",
+      "difficulty": 2
+    },
+    {
+      "id": "g1-ch3-006",
+      "type": "img_id",
+      "question": "Sur quelle photo le licol est-il bien ajusté ?",
+      "options": ["Photo A", "Photo B", "Photo C"],
+      "correct": 1,
+      "needs_image": true,
+      "image_description": "Three photos of horses wearing red halters. Photo A: halter too high. Photo B: correctly positioned with noseband at right height. Photo C: halter too low/twisted.",
+      "explanation": "Un licol bien ajusté a la muserolle positionnée à mi-chemin entre les yeux et les naseaux, ni trop serré ni trop lâche.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch3-007a",
+      "type": "mcq",
+      "question": "Sur un licol, comment s'appelle la partie qui passe au-dessus de la tête du cheval ?",
+      "options": [
+        "La muserolle",
+        "Le dessus de tête",
+        "Le montant",
+        "La sous-gorge"
+      ],
+      "correct": 1,
+      "explanation": "Le dessus de tête est la partie du licol qui passe derrière les oreilles, au-dessus de la tête du cheval.",
+      "difficulty": 1,
+      "_note": "Derived from Q7 labeling exercise — halter parts: 1-dessus de tête, 2-boucle, 3-montant, 4-muserolle, 5-sous-gorge, 6-anneau, 7-mousqueton, 8-longe"
+    },
+    {
+      "id": "g1-ch3-007b",
+      "type": "mcq",
+      "question": "Sur un licol, comment s'appelle la partie qui passe sur le nez du cheval ?",
+      "options": [
+        "Le montant",
+        "La longe",
+        "La muserolle",
+        "La boucle"
+      ],
+      "correct": 2,
+      "explanation": "La muserolle est la partie du licol qui entoure le nez du cheval.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch3-008a",
+      "type": "mcq",
+      "question": "Sur un filet, comment s'appelle la partie métallique qui va dans la bouche du cheval ?",
+      "options": [
+        "La muserolle",
+        "Le mors",
+        "La têtière",
+        "La sous-gorge"
+      ],
+      "correct": 1,
+      "explanation": "Le mors est la pièce métallique placée dans la bouche du cheval, qui permet de communiquer avec lui via les rênes.",
+      "difficulty": 1,
+      "_note": "Derived from Q8 labeling — bridle parts: 1-têtière, 2-frontale, 3-montant de muserolle, 4-montant du filet, 5-muserolle, 6-mors, 7-sous-gorge, 8-rênes"
+    },
+    {
+      "id": "g1-ch3-009a",
+      "type": "mcq",
+      "question": "Comment s'appelle la partie haute à l'arrière de la selle ?",
+      "options": [
+        "Le pommeau",
+        "Le siège",
+        "Le troussequin",
+        "Le quartier"
+      ],
+      "correct": 2,
+      "explanation": "Le troussequin est la partie arrière surélevée de la selle. Le pommeau est à l'avant.",
+      "difficulty": 1,
+      "_note": "Derived from Q9 labeling — saddle parts: 1-troussequin, 2-siège, 3-pommeau, 4-petit quartier, 5-quartier, 6-contre-sanglons, 7-étrivière, 8-étrier"
+    },
+    {
+      "id": "g1-ch3-009b",
+      "type": "mcq",
+      "question": "Comment s'appelle la partie de la selle où l'on s'assoit ?",
+      "options": [
+        "Le quartier",
+        "Le siège",
+        "Le pommeau",
+        "L'étrivière"
+      ],
+      "correct": 1,
+      "explanation": "Le siège est la partie de la selle sur laquelle le cavalier s'assoit.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch3-010",
+      "type": "img_id",
+      "question": "Sur quelle photo le nœud d'attache est-il correctement fait ?",
+      "options": ["Photo A", "Photo B", "Photo C"],
+      "correct": 2,
+      "needs_image": true,
+      "image_description": "Three photos of red ropes tied to metal rings. Photo A: rope too loose/wrong knot. Photo B: appears correct but wrong. Photo C: proper quick-release knot.",
+      "explanation": "Le nœud d'attache doit être un nœud de sécurité (nœud d'attache rapide) qui peut se défaire rapidement en cas d'urgence.",
+      "difficulty": 1
+    }
+  ]
+}

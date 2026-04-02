@@ -1,0 +1,155 @@
+{
+  "galop": 1,
+  "chapter": 1,
+  "title": "Connaissances Générales",
+  "emoji": "📋",
+  "questions": [
+    {
+      "id": "g1-ch1-001",
+      "type": "multi_select",
+      "question": "Vrai ou faux ? Coche toutes les affirmations correctes :",
+      "options": [
+        "Prendre le temps de s'occuper de son cheval, c'est le respecter.",
+        "Le code de la route s'applique seulement pour les véhicules à moteur et les deux roues.",
+        "Être cavalier, c'est savoir garder son calme en toute situation.",
+        "Si mon cheval doit prendre le départ d'une compétition et qu'il est malade, je peux lui administrer tous les médicaments pour le soigner, sans restriction."
+      ],
+      "correct": [0, 2],
+      "explanation": "Prendre soin de son cheval = le respecter. Être cavalier = garder son calme. Le code de la route s'applique aussi aux cavaliers. Et on ne peut pas donner n'importe quel médicament sans contrôle vétérinaire.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch1-002",
+      "type": "mcq",
+      "question": "Les règles de sécurité à pied sont :",
+      "options": [
+        "moins importantes que les règles de sécurité à cheval.",
+        "aussi importantes que les règles de sécurité à cheval.",
+        "plus importantes que les règles de sécurité à cheval."
+      ],
+      "correct": 1,
+      "explanation": "Les règles de sécurité à pied sont tout aussi importantes qu'à cheval. On peut se faire blesser dans les deux cas.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch1-003",
+      "type": "multi_select",
+      "question": "Vrai ou faux ? Coche toutes les affirmations correctes :",
+      "options": [
+        "Renforcer l'engagement et le sens des responsabilités fait partie du projet éducatif de la FFE.",
+        "Tous les clubs FFE peuvent délivrer des titres de champion de France.",
+        "Je peux trouver un club près de chez moi en effectuant une recherche sur ffe.com.",
+        "Pour prendre ma licence, je la demande à mon club ou à une association de cavaliers.",
+        "La licence se renouvelle tous les ans à partir du 1er janvier."
+      ],
+      "correct": [0, 2, 3],
+      "explanation": "La FFE a un projet éducatif, on peut chercher un club sur ffe.com, et la licence se demande au club. Par contre, seuls certains clubs organisent les championnats, et la licence ne se renouvelle pas automatiquement au 1er janvier pour tous.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch1-004",
+      "type": "mcq",
+      "question": "Les centres équestres sont des établissements :",
+      "options": [
+        "sportifs et agricoles",
+        "sportifs",
+        "agricoles"
+      ],
+      "correct": 0,
+      "explanation": "Les centres équestres ont un double statut : sportif (enseignement de l'équitation) et agricole (hébergement et soin des chevaux).",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch1-005",
+      "type": "mcq",
+      "question": "Les diplômes de mon enseignant sont :",
+      "options": [
+        "affichés au club",
+        "facultatifs",
+        "repassés tous les 5 ans"
+      ],
+      "correct": 0,
+      "explanation": "Les diplômes de l'enseignant doivent être affichés dans le club pour que tout le monde puisse les consulter.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch1-006",
+      "type": "multi_select",
+      "question": "Les clubs labélisés s'engagent à garantir :",
+      "options": [
+        "un accueil organisé et attentif",
+        "des chevaux et poneys bien traités",
+        "un projet pédagogique personnalisé",
+        "des installations comportant un manège couvert"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "Les clubs labélisés garantissent un bon accueil, le bien-être des animaux et un enseignement personnalisé. Le manège couvert n'est pas obligatoire pour obtenir le label.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch1-007",
+      "type": "mcq",
+      "question": "Les championnats de France Poney et Clubs ont lieu chaque année à :",
+      "options": [
+        "Fontainebleau",
+        "Saumur",
+        "Lamotte"
+      ],
+      "correct": 2,
+      "explanation": "Les championnats de France Poney et Clubs se déroulent chaque année à Lamotte-Beuvron.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch1-008",
+      "type": "mcq",
+      "question": "Le siège social de la FFE est situé à :",
+      "options": [
+        "Deauville",
+        "Lamotte",
+        "Paris"
+      ],
+      "correct": 1,
+      "explanation": "Le siège social de la Fédération Française d'Équitation se trouve à Lamotte-Beuvron, dans le Loir-et-Cher.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch1-009",
+      "type": "mcq",
+      "question": "En club, le port du casque est facultatif :",
+      "options": [
+        "si je suis titulaire du Galop 7",
+        "si je ne fais pas de compétition",
+        "dans aucun cas"
+      ],
+      "correct": 2,
+      "explanation": "Le port du casque (ou bombe) n'est JAMAIS facultatif en club. Il est obligatoire pour tous, quel que soit le niveau.",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch1-010",
+      "type": "mcq",
+      "question": "Le bien-être animal :",
+      "options": [
+        "Fait l'objet d'une Charte pour le bien-être équin.",
+        "Ne concerne pas le cavalier.",
+        "N'est pris en compte que pour les animaux sauvages."
+      ],
+      "correct": 0,
+      "explanation": "Le bien-être animal fait l'objet d'une Charte spécifique pour les équidés. C'est l'affaire de tous, cavaliers compris !",
+      "difficulty": 1
+    },
+    {
+      "id": "g1-ch1-011",
+      "type": "mcq",
+      "question": "Les 3 principaux domaines d'intervention de la FFE sont :",
+      "options": [
+        "La formation, la compétition, le développement.",
+        "Le poney, le cheval, les courses.",
+        "L'élevage, l'équitation, l'attelage."
+      ],
+      "correct": 0,
+      "explanation": "La FFE intervient principalement dans la formation, la compétition et le développement de l'équitation.",
+      "difficulty": 1
+    }
+  ]
+}
