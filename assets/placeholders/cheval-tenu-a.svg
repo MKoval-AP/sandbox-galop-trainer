@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 240">
+  <!-- Sky / outdoor background -->
+  <rect width="220" height="170" fill="#C8DFF0"/>
+  <!-- Ground -->
+  <rect y="170" width="220" height="70" fill="#C8B060"/>
+  <rect y="168" width="220" height="6" fill="#B8A050"/>
+  <rect y="158" width="220" height="12" fill="#7AAA40" opacity="0.4"/>
+
+  <!-- === HORSE (same, facing right) === -->
+  <ellipse cx="148" cy="130" rx="52" ry="32" fill="#8B6040" stroke="#5A3820" stroke-width="1.5"/>
+  <path d="M 175,102 Q 190,82 196,68 Q 192,60 184,62 Q 180,78 168,98 Z"
+        fill="#8B6040" stroke="#5A3820" stroke-width="1.5"/>
+  <ellipse cx="202" cy="62" rx="22" ry="16" fill="#8B6040" stroke="#5A3820" stroke-width="1.5" transform="rotate(-15,202,62)"/>
+  <polygon points="192,50 186,38 198,48" fill="#8B6040" stroke="#5A3820" stroke-width="1"/>
+  <circle cx="208" cy="58" r="4" fill="#1A0800"/>
+  <ellipse cx="218" cy="66" rx="4" ry="3" fill="#6A3820"/>
+  <!-- Legs -->
+  <path d="M 170,158 Q 168,175 166,195" stroke="#7A5030" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M 180,160 Q 184,178 190,195" stroke="#7A5030" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M 118,158 Q 115,175 112,195" stroke="#7A5030" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M 130,160 Q 134,178 136,195" stroke="#7A5030" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <ellipse cx="166" cy="196" rx="8" ry="5" fill="#3A2010"/>
+  <ellipse cx="190" cy="196" rx="8" ry="5" fill="#3A2010"/>
+  <ellipse cx="112" cy="196" rx="8" ry="5" fill="#3A2010"/>
+  <ellipse cx="136" cy="196" rx="8" ry="5" fill="#3A2010"/>
+  <path d="M 97,128 Q 78,132 72,148 Q 76,160 88,155 Q 78,148 84,138 Z"
+        fill="#7A5030" stroke="#5A3820" stroke-width="1"/>
+  <path d="M 192,64 Q 188,70 184,82 Q 182,90 178,98"
+        stroke="#5A3820" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- Long loose rope from horse's head -->
+  <path d="M 196,68 Q 185,75 175,82 Q 155,95 138,110 Q 125,120 115,128"
+        stroke="#E84820" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- === PERSON — INCORRECT: standing behind horse's shoulder, too far back === -->
+  <!-- Person is positioned at the hip/flank of horse — dangerous! -->
+  <!-- Head -->
+  <circle cx="88" cy="88" r="14" fill="#F5CBA7" stroke="#C8A070" stroke-width="1.5"/>
+  <!-- Helmet -->
+  <ellipse cx="88" cy="81" rx="14" ry="10" fill="#2A2A2A"/>
+  <rect x="74" y="87" width="28" height="5" rx="2" fill="#1A1A1A"/>
+  <!-- Torso — different color jacket -->
+  <path d="M 80,102 L 76,144 L 100,144 L 96,102 Z" fill="#E05030" stroke="#C04020" stroke-width="1"/>
+
+  <!-- Arms stretched forward holding long rope (has to reach far forward — wrong) -->
+  <path d="M 96,108 Q 108,112 116,120"
+        stroke="#F5CBA7" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M 80,108 Q 72,118 68,128"
+        stroke="#F5CBA7" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <circle cx="116" cy="120" r="5" fill="#F5CBA7"/>
+
+  <!-- Legs -->
+  <path d="M 84,144 Q 80,162 76,178" stroke="#2A1A1A" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M 92,144 Q 96,162 100,178" stroke="#2A1A1A" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <ellipse cx="76" cy="179" rx="8" ry="5" fill="#2A1810"/>
+  <ellipse cx="100" cy="179" rx="8" ry="5" fill="#2A1810"/>
+
+  <!-- Warning: person is at the FLANK — dangerous zone mark -->
+  <circle cx="120" cy="130" r="12" fill="#FF4400" opacity="0.25"/>
+  <text x="120" y="134" text-anchor="middle" font-size="14" fill="#CC2200" font-weight="bold" font-family="system-ui,sans-serif">!</text>
+
+  <!-- Label -->
+  <rect x="4" y="208" width="212" height="26" rx="4" fill="#CC4400" opacity="0.9"/>
+  <text x="110" y="226" text-anchor="middle" font-size="13" fill="white" font-weight="bold" font-family="system-ui,sans-serif">A — Incorrect : trop en arrière ✗</text>
+</svg>

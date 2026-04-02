@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galop 1 — Chapitres</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+  <header class="page-header">
+    <h1>🐴 Galop 1</h1>
+    <p>Choisissez un chapitre pour commencer</p>
+  </header>
+
+  <nav class="breadcrumb">
+    <a href="../index.html">Accueil</a>
+    <span>›</span>
+    <span>Galop 1</span>
+  </nav>
+
+  <!-- Overall summary (hidden until all chapters done) -->
+  <div id="overallSummary" class="summary-card" style="display:none; margin-top: 16px;">
+    <h2>Résultat global Galop 1</h2>
+    <div class="big-score">—</div>
+    <p class="summary-msg" style="margin-top: 8px; opacity: 0.9;"></p>
+  </div>
+
+  <div class="chapters-grid">
+
+    <!-- Chapitre 1 -->
+    <a href="quiz.html?chapter=1" class="chapter-card">
+      <div class="chapter-card__num">1</div>
+      <div class="chapter-card__body">
+        <div class="chapter-card__title">Connaissances Générales</div>
+        <div class="chapter-card__meta">FFE, clubs, championnats · 8 questions</div>
+      </div>
+      <div class="chapter-card__score chapter-card__score--none" id="ch1-score">Non commencé</div>
+    </a>
+
+    <!-- Chapitre 2 -->
+    <a href="quiz.html?chapter=2" class="chapter-card">
+      <div class="chapter-card__num">2</div>
+      <div class="chapter-card__body">
+        <div class="chapter-card__title">Connaissance du Cheval</div>
+        <div class="chapter-card__meta">Comportement, allures, anatomie · 13 questions</div>
+      </div>
+      <div class="chapter-card__score chapter-card__score--none" id="ch2-score">Non commencé</div>
+    </a>
+
+    <!-- Chapitre 3 -->
+    <a href="quiz.html?chapter=3" class="chapter-card">
+      <div class="chapter-card__num">3</div>
+      <div class="chapter-card__body">
+        <div class="chapter-card__title">S'Occuper du Cheval</div>
+        <div class="chapter-card__meta">Équipement, soins, harnachement · 10 questions</div>
+      </div>
+      <div class="chapter-card__score chapter-card__score--none" id="ch3-score">Non commencé</div>
+    </a>
+
+    <!-- Chapitre 4 -->
+    <a href="quiz.html?chapter=4" class="chapter-card">
+      <div class="chapter-card__num">4</div>
+      <div class="chapter-card__body">
+        <div class="chapter-card__title">Pratique Équestre à Pied</div>
+        <div class="chapter-card__meta">Marcher avec son cheval, sécurité · 9 questions</div>
+      </div>
+      <div class="chapter-card__score chapter-card__score--none" id="ch4-score">Non commencé</div>
+    </a>
+
+    <!-- Chapitre 5 -->
+    <a href="quiz.html?chapter=5" class="chapter-card">
+      <div class="chapter-card__num">5</div>
+      <div class="chapter-card__body">
+        <div class="chapter-card__title">Pratique Équestre à Cheval</div>
+        <div class="chapter-card__meta">Aides, allures, position, sécurité · 15 questions</div>
+      </div>
+      <div class="chapter-card__score chapter-card__score--none" id="ch5-score">Non commencé</div>
+    </a>
+
+  </div>
+
+  <script src="../js/data-galop1.js"></script>
+  <script src="../js/chapter-hub.js"></script>
+</body>
+</html>

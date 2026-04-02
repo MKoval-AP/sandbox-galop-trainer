@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 240">
+  <!-- Sky / outdoor background -->
+  <rect width="220" height="170" fill="#C8DFF0"/>
+  <!-- Ground (sand/arena) -->
+  <rect y="170" width="220" height="70" fill="#C8B060"/>
+  <rect y="168" width="220" height="6" fill="#B8A050"/>
+  <!-- Grass hint -->
+  <rect y="158" width="220" height="12" fill="#7AAA40" opacity="0.4"/>
+
+  <!-- === HORSE (facing right, walking) === -->
+  <!-- Horse body -->
+  <ellipse cx="148" cy="130" rx="52" ry="32" fill="#8B6040" stroke="#5A3820" stroke-width="1.5"/>
+  <!-- Horse neck -->
+  <path d="M 175,102 Q 190,82 196,68 Q 192,60 184,62 Q 180,78 168,98 Z"
+        fill="#8B6040" stroke="#5A3820" stroke-width="1.5"/>
+  <!-- Horse head -->
+  <ellipse cx="202" cy="62" rx="22" ry="16" fill="#8B6040" stroke="#5A3820" stroke-width="1.5" transform="rotate(-15,202,62)"/>
+  <!-- Horse ear -->
+  <polygon points="192,50 186,38 198,48" fill="#8B6040" stroke="#5A3820" stroke-width="1"/>
+  <!-- Horse eye -->
+  <circle cx="208" cy="58" r="4" fill="#1A0800"/>
+  <!-- Nostril -->
+  <ellipse cx="218" cy="66" rx="4" ry="3" fill="#6A3820"/>
+
+  <!-- Horse legs (walking position) -->
+  <!-- Front legs -->
+  <path d="M 170,158 Q 168,175 166,195" stroke="#7A5030" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M 180,160 Q 184,178 190,195" stroke="#7A5030" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <!-- Rear legs -->
+  <path d="M 118,158 Q 115,175 112,195" stroke="#7A5030" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M 130,160 Q 134,178 136,195" stroke="#7A5030" stroke-width="9" fill="none" stroke-linecap="round"/>
+
+  <!-- Hooves -->
+  <ellipse cx="166" cy="196" rx="8" ry="5" fill="#3A2010"/>
+  <ellipse cx="190" cy="196" rx="8" ry="5" fill="#3A2010"/>
+  <ellipse cx="112" cy="196" rx="8" ry="5" fill="#3A2010"/>
+  <ellipse cx="136" cy="196" rx="8" ry="5" fill="#3A2010"/>
+
+  <!-- Horse tail -->
+  <path d="M 97,128 Q 78,132 72,148 Q 76,160 88,155 Q 78,148 84,138 Z"
+        fill="#7A5030" stroke="#5A3820" stroke-width="1"/>
+
+  <!-- Mane -->
+  <path d="M 192,64 Q 188,70 184,82 Q 182,90 178,98"
+        stroke="#5A3820" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- Lead rope (longe) — short, controlled -->
+  <path d="M 196,68 Q 190,72 185,76 Q 168,84 150,90"
+        stroke="#E84820" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- === PERSON — CORRECT position: left side of horse, at shoulder === -->
+  <!-- Body: person walking alongside horse's shoulder, on the LEFT -->
+  <!-- Head -->
+  <circle cx="140" cy="75" r="14" fill="#F5CBA7" stroke="#C8A070" stroke-width="1.5"/>
+  <!-- Hair (helmet) -->
+  <ellipse cx="140" cy="68" rx="14" ry="10" fill="#2A2A2A"/>
+  <rect x="126" y="74" width="28" height="5" rx="2" fill="#1A1A1A"/>
+  <!-- Torso — blue riding jacket -->
+  <path d="M 132,89 L 128,130 L 152,130 L 148,89 Z" fill="#3A6AB0" stroke="#2A5A9A" stroke-width="1"/>
+  <!-- Arms -->
+  <!-- Right arm: extends forward holding the rope near horse's head -->
+  <path d="M 148,95 Q 162,92 172,88"
+        stroke="#F5CBA7" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- Left arm: bent at side, holding slack of rope -->
+  <path d="M 132,95 Q 124,105 120,115"
+        stroke="#F5CBA7" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- Right hand holds rope -->
+  <circle cx="172" cy="88" r="5" fill="#F5CBA7"/>
+  <!-- Left hand holds extra rope -->
+  <circle cx="120" cy="115" r="5" fill="#F5CBA7"/>
+
+  <!-- Slack rope in left hand -->
+  <path d="M 150,90 Q 145,96 140,100 Q 132,108 122,115"
+        stroke="#E84820" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="5,3"/>
+
+  <!-- Legs (walking) -->
+  <path d="M 136,130 Q 132,152 128,172" stroke="#1A3A6A" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M 144,130 Q 148,152 152,172" stroke="#1A3A6A" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <!-- Boots -->
+  <ellipse cx="128" cy="173" rx="8" ry="5" fill="#2A1810"/>
+  <ellipse cx="152" cy="173" rx="8" ry="5" fill="#2A1810"/>
+
+  <!-- Direction arrow -->
+  <path d="M 10,145 L 30,145" stroke="#5C8A3C" stroke-width="2.5" fill="none"/>
+  <polygon points="30,141 38,145 30,149" fill="#5C8A3C"/>
+
+  <!-- Label -->
+  <rect x="4" y="208" width="212" height="26" rx="4" fill="#5C8A3C" opacity="0.9"/>
+  <text x="110" y="226" text-anchor="middle" font-size="13" fill="white" font-weight="bold" font-family="system-ui,sans-serif">B — Correct : côté gauche ✓</text>
+</svg>

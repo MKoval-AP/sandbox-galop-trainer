@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 230">
+  <rect width="200" height="230" fill="#FAF3E0"/>
+
+  <!-- Stirrup leather coming from top -->
+  <rect x="92" y="5" width="16" height="55" rx="4" fill="#8B5E3C"/>
+  <!-- Stirrup leather buckle -->
+  <rect x="88" y="38" width="24" height="8" rx="2" fill="#A07040"/>
+
+  <!-- Stirrup iron frame -->
+  <rect x="58" y="60" width="84" height="14" rx="5" fill="#C0C0C0" stroke="#909090" stroke-width="2.5"/>
+  <!-- Stirrup side bars -->
+  <rect x="58" y="60" width="12" height="60" rx="4" fill="#B0B0B0" stroke="#909090" stroke-width="2"/>
+  <rect x="130" y="60" width="12" height="60" rx="4" fill="#B0B0B0" stroke="#909090" stroke-width="2"/>
+  <!-- Stirrup bottom bar -->
+  <rect x="58" y="116" width="84" height="12" rx="5" fill="#C0C0C0" stroke="#909090" stroke-width="2.5"/>
+
+  <!-- Boot / Leg coming from above -->
+  <!-- Leg (blue riding pant) -->
+  <rect x="78" y="10" width="44" height="60" rx="8" fill="#3A6AB0" stroke="#2A5090" stroke-width="1.5"/>
+  <!-- Boot (dark) -->
+  <path d="M 78,65 Q 76,85 76,105 Q 76,118 86,125 Q 100,130 120,125 Q 130,118 130,105 Q 130,85 122,65 Z"
+        fill="#2A2A2A" stroke="#1A1A1A" stroke-width="1.5"/>
+  <!-- Boot toe cap -->
+  <ellipse cx="105" cy="124" rx="20" ry="8" fill="#222222" stroke="#111111" stroke-width="1"/>
+
+  <!-- CORRECT: Only the BALL of the foot on the stirrup bar (not too far, not toe only) -->
+  <!-- The front 1/3 of the boot rests on stirrup bar -->
+  <!-- Foot goes in to about the widest part of foot -->
+  <rect x="76" y="115" width="50" height="12" rx="3" fill="#383838" stroke="#1A1A1A" stroke-width="1"/>
+
+  <!-- Heel visible below stirrup — heel down position -->
+  <ellipse cx="88" cy="128" rx="12" ry="6" fill="#1A1A1A"/>
+
+  <!-- Arrow showing correct depth -->
+  <path d="M 130,120 L 148,120" stroke="#5C8A3C" stroke-width="2" fill="none"/>
+  <polygon points="148,116 158,120 148,124" fill="#5C8A3C"/>
+  <text x="162" y="115" font-size="9" fill="#3A6A20" font-family="system-ui,sans-serif">avant du</text>
+  <text x="162" y="127" font-size="9" fill="#3A6A20" font-family="system-ui,sans-serif">pied ✓</text>
+
+  <!-- Heel down indicator -->
+  <path d="M 60,128 L 42,128" stroke="#5C8A3C" stroke-width="2" fill="none"/>
+  <polygon points="42,124 32,128 42,132" fill="#5C8A3C"/>
+  <text x="5" y="125" font-size="9" fill="#3A6A20" font-family="system-ui,sans-serif">talon</text>
+  <text x="5" y="137" font-size="9" fill="#3A6A20" font-family="system-ui,sans-serif">bas ✓</text>
+
+  <!-- Label -->
+  <rect x="4" y="202" width="192" height="25" rx="4" fill="#5C8A3C" opacity="0.9"/>
+  <text x="100" y="219" text-anchor="middle" font-size="12" fill="white" font-weight="bold" font-family="system-ui,sans-serif">B — Correct : avant du pied ✓</text>
+</svg>

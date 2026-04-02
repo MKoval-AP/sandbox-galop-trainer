@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galop Trainer — Entraînement FFE</title>
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .hero {
+      text-align: center;
+      padding: 32px 20px 8px;
+    }
+    .hero__horse { font-size: 4rem; line-height: 1; margin-bottom: 8px; }
+    .hero h2 { font-size: 1.3rem; color: var(--text-light); font-weight: 400; }
+  </style>
+</head>
+<body>
+  <header class="page-header">
+    <h1>🐴 Galop Trainer</h1>
+    <p>Préparez vos examens FFE — Galop 1 à 7</p>
+  </header>
+
+  <div class="hero">
+    <p class="hero h2">Choisissez votre niveau pour commencer l'entraînement</p>
+  </div>
+
+  <div class="tiles-grid">
+    <!-- Galop 1 — actif -->
+    <a href="galop1/index.html" class="tile tile--active">
+      <div class="tile__icon">🐴</div>
+      <div class="tile__name">Galop 1</div>
+      <div class="tile__label">5 chapitres · ~55 questions</div>
+      <span class="tile__badge">DISPONIBLE</span>
+    </a>
+
+    <!-- Galop 2 — verrouillé -->
+    <div class="tile tile--locked">
+      <div class="tile__icon">🔒</div>
+      <div class="tile__name">Galop 2</div>
+      <div class="tile__label">Bientôt disponible</div>
+    </div>
+
+    <!-- Galop 3 — verrouillé -->
+    <div class="tile tile--locked">
+      <div class="tile__icon">🔒</div>
+      <div class="tile__name">Galop 3</div>
+      <div class="tile__label">Bientôt disponible</div>
+    </div>
+
+    <!-- Galop 4 — verrouillé -->
+    <div class="tile tile--locked">
+      <div class="tile__icon">🔒</div>
+      <div class="tile__name">Galop 4</div>
+      <div class="tile__label">Bientôt disponible</div>
+    </div>
+  </div>
+
+  <footer style="text-align:center; padding: 40px 20px 20px; font-size: 0.8rem; color: var(--text-light);">
+    Galop Trainer · Contenu basé sur le programme officiel FFE
+  </footer>
+</body>
+</html>

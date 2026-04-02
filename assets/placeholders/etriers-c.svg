@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 230">
+  <rect width="200" height="230" fill="#FAF3E0"/>
+
+  <!-- Stirrup leather -->
+  <rect x="92" y="5" width="16" height="55" rx="4" fill="#8B5E3C"/>
+  <rect x="88" y="38" width="24" height="8" rx="2" fill="#A07040"/>
+
+  <!-- Stirrup iron -->
+  <rect x="58" y="60" width="84" height="14" rx="5" fill="#C0C0C0" stroke="#909090" stroke-width="2.5"/>
+  <rect x="58" y="60" width="12" height="60" rx="4" fill="#B0B0B0" stroke="#909090" stroke-width="2"/>
+  <rect x="130" y="60" width="12" height="60" rx="4" fill="#B0B0B0" stroke="#909090" stroke-width="2"/>
+  <rect x="58" y="116" width="84" height="12" rx="5" fill="#C0C0C0" stroke="#909090" stroke-width="2.5"/>
+
+  <!-- Leg (blue) -->
+  <rect x="78" y="10" width="44" height="60" rx="8" fill="#3A6AB0" stroke="#2A5090" stroke-width="1.5"/>
+  <!-- Boot (dark) -->
+  <path d="M 78,65 Q 76,85 76,105 Q 76,118 86,125 Q 100,130 120,125 Q 130,118 130,105 Q 130,85 122,65 Z"
+        fill="#2A2A2A" stroke="#1A1A1A" stroke-width="1.5"/>
+  <ellipse cx="105" cy="124" rx="20" ry="8" fill="#222222" stroke="#111111" stroke-width="1"/>
+
+  <!-- INCORRECT C: only the very TIP of the toe in the stirrup -->
+  <!-- Just the front tip of boot on the bar -->
+  <rect x="118" y="115" width="20" height="12" rx="3" fill="#383838" stroke="#CC2200" stroke-width="2"/>
+
+  <!-- Heel way up (not down) -->
+  <ellipse cx="80" cy="116" rx="10" ry="5" fill="#2A2A2A" transform="rotate(-15,80,116)"/>
+
+  <!-- Toe-only indicator -->
+  <path d="M 60,120 L 40,120" stroke="#CC4400" stroke-width="2" fill="none"/>
+  <polygon points="40,116 30,120 40,124" fill="#CC4400"/>
+  <text x="2" y="114" font-size="9" fill="#8B0000" font-family="system-ui,sans-serif">sur la</text>
+  <text x="2" y="126" font-size="9" fill="#8B0000" font-family="system-ui,sans-serif">pointe ✗</text>
+
+  <!-- Heel up indicator -->
+  <path d="M 65,105 L 48,95" stroke="#CC4400" stroke-width="2" fill="none"/>
+  <text x="8" y="92" font-size="9" fill="#8B0000" font-family="system-ui,sans-serif">talon haut ✗</text>
+
+  <!-- Label -->
+  <rect x="4" y="202" width="192" height="25" rx="4" fill="#CC4400" opacity="0.9"/>
+  <text x="100" y="219" text-anchor="middle" font-size="12" fill="white" font-weight="bold" font-family="system-ui,sans-serif">C — Incorrect : sur la pointe ✗</text>
+</svg>
